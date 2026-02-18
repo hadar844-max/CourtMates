@@ -1,0 +1,168 @@
+/* =========================================
+   1. GLOBAL STYLES (העיצוב המקורי שלך)
+   ========================================= */
+
+/* רקע כללי - אפרסק בהיר מאוד */
+body {
+    background-color: #fff0e6; 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333; /* צבע טקסט ברירת מחדל */
+}
+
+/* חלק עליון ותחתון - צבע סלמון/ורוד עדין */
+.main-header, .main-footer {
+    background-color: #ffccbc; 
+    border-bottom: 1px solid #ffab91;
+}
+
+/* צבע הטקסט בלוגו ובפוטר - חום כהה */
+.logo-text, .user-text, .main-footer p {
+    color: #4e342e; 
+}
+
+/* תפריט הניווט - הכתום החזק */
+.custom-nav {
+    background-color: #ff6600; 
+}
+
+.custom-nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.custom-nav .nav-link:hover, .custom-nav .nav-link.active {
+    color: #4e342e; /* חום כהה במעבר עכבר ודף פעיל */
+}
+
+/* כפתורים כתומים */
+.btn-warning {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    color: white;
+}
+.btn-warning:hover {
+    background-color: #cc5200;
+    border-color: #cc5200;
+    color: white;
+}
+
+/* =========================================
+   2. HOME PAGE (עיצוב דף הבית המקורי)
+   ========================================= */
+
+.sidebar-image {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    border: 4px solid #fff;
+    border-radius: 8px; 
+}
+
+.game-card, .list-group-item, .card {
+    background-color: #ffffff;
+    transition: transform 0.2s;
+    border: none;
+}
+
+.game-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Quick Filters Header */
+.card-header.bg-warning {
+    background-color: #ffccbc !important; 
+    border-bottom: 1px solid #ffab91;
+    color: #4e342e;
+}
+
+/* =========================================
+   3. FIND GAMES PAGE (התאמה למסך החיפוש)
+   ========================================= */
+
+/* עיצוב שורת משחק ברשימה */
+.game-item {
+    background-color: #ffffff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 6px solid transparent; /* הפס הצבעוני בצד */
+}
+
+.game-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* צבעי סטטוס לפס הצדדי */
+.game-item:has(.bg-success) { border-left-color: #28a745; } /* ירוק */
+.game-item:has(.bg-danger) { border-left-color: #dc3545; }  /* אדום */
+.game-item:has(.bg-info) { border-left-color: #17a2b8; }    /* כחול */
+
+/* עיצוב החלק האפור של השעה */
+.game-item .bg-light {
+    background-color: #fff3e0 !important; /* אפרסק עדין במקום אפור גנרי */
+    border-right: 1px solid #ffe0b2;
+}
+
+.game-item h4.text-primary {
+    color: #ff6600 !important; /* משנים את צבע השעה לכתום המותג */
+}
+
+/* =========================================
+   4. NEW: DYNAMIC STYLES & UI IMPROVEMENTS
+   ========================================= */
+
+/* עיצוב שדות לא תקינים (ולידציות JS - סעיף 38) */
+.is-invalid {
+    border-color: #dc3545 !important;
+    background-image: none !important;
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25) !important;
+}
+
+/* עיצוב הודעת השגיאה מתחת לשדה */
+.invalid-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+}
+
+.is-invalid ~ .invalid-feedback {
+    display: block;
+}
+
+/* עיצוב כפתור המחיקה במסך "My Games" */
+.leave-game-btn {
+    transition: all 0.3s ease;
+}
+
+.leave-game-btn:hover {
+    background-color: #bb2d3b;
+    transform: scale(1.05);
+}
+
+/* חיווי לינקים שלא מומשו (סעיף 14) */
+[title] {
+    cursor: help;
+}
+
+/* אפקט Hover כללי לכל הקישורים בתפריט הניווט */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4e342e;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}

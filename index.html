@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourtMates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="main-header py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <h3 class="logo-text fw-bold mb-0">CourtMates 🏀</h3>
+                </div>
+                <div class="col-6 text-end">
+                    <span class="me-2 user-text">Hello Guest</span>
+                    <a href="#" class="btn btn-sm btn-outline-dark" title="Login feature is not implemented yet">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="custom-nav py-2 shadow-sm">
+        <div class="container">
+            <ul class="nav"> 
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="includes/find-games.html">Find Games</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="includes/create-game.html">Create Game</a></li>
+                <li class="nav-item"><a class="nav-link text-white fw-bold" href="includes/my-games.html">My Games</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid container-xl my-5 flex-grow-1">
+        <div class="row">
+            
+            <aside class="col-lg-3 mb-4 mb-lg-0">
+                <div class="sticky-top" style="top: 20px;">
+                    <img src="Images/court.jpg" alt="Basketball Court" class="sidebar-image shadow rounded mb-4 w-100">
+                    
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-warning fw-bold text-dark">Quick Filters</div>
+                        <div class="list-group list-group-flush">
+                            <a href="includes/find-games.html" class="list-group-item list-group-item-action">🏀 3 vs 3</a>
+                            <a href="includes/find-games.html" class="list-group-item list-group-item-action">🏀 5 vs 5</a>
+                            <a href="includes/find-games.html" class="list-group-item list-group-item-action">🏟️ Indoor Courts</a>
+                            <a href="includes/find-games.html" class="list-group-item list-group-item-action">☀️ Outdoor Courts</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="col-lg-6 mb-4 mb-lg-0">
+                
+                <div class="text-start mb-4 p-4 bg-white rounded shadow-sm border">
+                    <h1 class="fw-bold display-6 text-dark">No More Cancellations.</h1>
+                    <p class="lead text-muted">Join reliable local games tailored to your skill level.</p>
+                    <a href="includes/find-games.html" class="btn btn-warning btn-lg px-4 fw-bold shadow-sm">Find a Game Now</a>
+                </div>
+
+                <section>
+                    <h3 class="fw-bold border-bottom pb-2 mb-4 text-dark">Upcoming Games</h3>
+
+                    <div class="row g-3">
+                        <article class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0 game-card">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary">Sportek Tel Aviv</h5>
+                                    <p class="text-muted small">Today, 20:00 • 5 vs 5</p>
+                                    <span class="badge bg-success mb-2">Confirmed</span>
+                                    <a href="includes/game-details.html" class="btn btn-outline-dark btn-sm w-100 mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0 game-card">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary">Jerusalem Park</h5>
+                                    <p class="text-muted small">Tomorrow, 18:30 • 3 vs 3</p>
+                                    <span class="badge bg-warning text-dark mb-2">Filling Fast</span>
+                                    <a href="includes/game-details.html" class="btn btn-outline-dark btn-sm w-100 mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-md-6">
+                            <div class="card h-100 shadow-sm border-0 game-card">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-primary">Haifa Sportan</h5>
+                                    <p class="text-muted small">Friday, 16:00 • Full Court</p>
+                                    <span class="badge bg-info text-dark mb-2">Open Spot</span>
+                                    <a href="includes/game-details.html" class="btn btn-outline-dark btn-sm w-100 mt-2">View Details</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="col-lg-3">
+                <div class="card shadow-sm border-0 h-100 bg-white">
+                    <div class="card-header bg-white fw-bold border-bottom text-dark py-3">
+                        About CourtMates
+                    </div>
+                    <div class="card-body">
+                        <p class="text-muted mb-4">
+                            <strong>CourtMates</strong> is the ultimate platform for amateur basketball players.
+                        </p>
+                        <p class="text-muted mb-4">
+                            We are here to solve the biggest frustration: <strong>last-minute cancellations</strong>.
+                        </p>
+                        <div class="alert alert-warning border-0 small">
+                            🏀 <strong>Did you know?</strong><br>
+                            Playing regularly improves both physical health and mental focus.
+                        </div>
+                        <hr>
+                        <p class="small text-muted text-center">
+                            Join over 500 players in your city today!
+                        </p>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer class="main-footer text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0 fw-bold">CourtMates &copy; 2026</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
